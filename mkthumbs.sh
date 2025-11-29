@@ -15,5 +15,5 @@ mkdir -p "$DST_ROOT"
 # Process each subdirectory
 for d in "${DIRS[@]}"; do
     mkdir -p "$DST_ROOT/$d"
-    mogrify -path "$DST_ROOT/$d" -thumbnail 800x800 "$SRC_ROOT/$d"/*.jpg
+    mogrify -path "$DST_ROOT/$d" -thumbnail 700x700 "$SRC_ROOT/$d"/*.jpg
 done
